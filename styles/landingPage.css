@@ -2,6 +2,7 @@ body {
     background-image: url(../imgs/pexels-pixabay-33101.jpg);
     background-position: center;
     height: 100%;
+    background-size: auto;
 }
 
 section {
