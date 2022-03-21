@@ -27,6 +27,7 @@ nav {
 
 #navbarResponsive ul li:hover {
     background-color: #d9534f;
+    transition: 0.6s;
 }
 
 /**************** CAROUSEL **************/
@@ -104,7 +105,7 @@ footer div p {
     left: 0;
     position: absolute;
     top: 0;
-    transition: transform 300ms;
+    transition: transform 500ms;
     width: 100%;
   }
   .button.outline:before {
@@ -137,6 +138,10 @@ footer div p {
   }
   .button:hover:after {
     transform: translateX(101%);
+  }
+
+  .button:hover {
+      background-color: #d9534f;
   }
   .button:hover .lines:before {
     transform: translateY(-101%);
