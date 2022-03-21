@@ -39,18 +39,24 @@ nav {
 
 /***************** CONTENT *************/
 
-.cabecera {
-    position: relative;
+section {
+    position: absolute;
+    z-index: 20;
+    margin-top: 250px;
+    color: white;
+    border-left: 1px solid #fff;
+    margin-left: 20px;
+    padding-left: 0!important;
 }
 
-.titular {
-    position: relative;
+.cuerpo {
+    padding-left: 0!important;
 }
 
 
 /*************** FOOTER ****************/
 footer {
-    border-top: 1px groove #fff
+    border-top: 1px solid #fff
 }
 
 footer::before {
