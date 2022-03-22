@@ -32,15 +32,13 @@
 
   <body>
 
-    <!----------------- Modal Login ---------------------->
-<div class="modal fade" id="modalLogin" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!----------------- Modal Login ----------------------->
+<div class="modal fade" id="Login" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalLoginTitle">Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form>
@@ -59,22 +57,21 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-primary">Entrar</button>
         </div>
       </div>
     </div>
   </div>
 
+
   <!----------------- Modal Registro ---------------------->
-<div class="modal fade" id="modalRegistro" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="Registro" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalRegistroTitle">Registro</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <form>
@@ -87,6 +84,8 @@
                     <input type="newPassword" name="newPassword" id="newPassword" placeholder="Contraseña">
                     <label for="doubleCheckPassword">Repetir contraseña: </label>
                     <input type="doubleCheckPassword" name="doubleCheckPassword" id="doubleCheckPassword" placeholder="repetir contraseña">
+                </div>
+                <div class="form-group">
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email" placeholder="Correo electrónico">
                 </div>
@@ -106,7 +105,7 @@
 
       <!------------------------------- Nav --------------------------->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container px-4 px-lg-5 cabecera">
+        <div class="container cabecera">
           <button
             class="navbar-toggler"
             type="button"
@@ -120,11 +119,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="#">Login</a>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#Login" href="#">Login</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" data-toogle="modal" data-target="modalRegistro" href="#">Regístrate!</a>
+              <li class="nav-item">
+                <a class="nav-link" data-toogle="modal" data-target="#Registro" href="#">Regístrate</a>
               </li>
             </ul>
           </div>
@@ -150,35 +149,35 @@
     
       <div id="carousel-example" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-interval="4500">
             <img 
               src="imgs/slide-1.jpg"
               class="d-block w-100"
               alt="slide-img-1"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="4500">
             <img
               src="imgs/slide-2.jpg"
               class="d-block w-100"
               alt="slide-img-2"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="4500">
             <img
               src="imgs/slide-3.jpg"
               class="d-block w-100"
               alt="slide-img-4"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="4500">
             <img
               src="imgs/slide-7.jpg"
               class="d-block w-100"
               alt="slide-img-5"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="4500">
             <img
               src="imgs/slide-6.jpg"
               class="d-block w-100"

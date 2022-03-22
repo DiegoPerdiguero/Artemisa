@@ -30,6 +30,10 @@ nav {
     transition: 0.6s;
 }
 
+.cabecera {
+  margin-right: 50px!important;
+}
+
 /**************** CAROUSEL **************/
 
 .carousel {
