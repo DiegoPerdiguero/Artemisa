@@ -138,6 +138,26 @@ width: 100%;
 height: 100%;
 }
 
+/*************** PANELES ********************/
+
+.panel {
+    border: 1px solid #000;
+    margin-top: 10%
+}
+
+.col .izquierda img{
+    width: 100%;
+}
+
+.derecha {
+    text-align: center;  
+}
+
+
+
+
+/*************** FONTS *********************/
+
 @font-face {
   font-family: 'Titillium Web';
   font-style: normal;
