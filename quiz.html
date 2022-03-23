@@ -83,15 +83,29 @@
     <section>
         <div class="container container-fluid flexcontainer panel">
             <div class="row">
-                <div class="col col-md-6">
-                    <div class="izquierda">
+                <div class="col col-md-6 no-gutters">
+                    <div class="izquierda d-flex justify-content-center align-items-center">
                         <img class="img-responsive" src="/imgs/slide-1.jpg">
                     </div>
                 </div>
-                <div class="col col-md-6">
+                <div class="col col-md-6 no-gutters panelIzquierdo">
                     <div class="derecha">
                         <h1>Campos del Quiz</h1>
-                    </div>  
+                        <form action="#" method="post" id="respuesta">
+                        <div class="form-group">
+                            <label for="username">Nombre común: </label>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Nombre común" required>
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                            <label for="password">Nombre científico: </label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Nombre científico" required>
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-danger" value="Confirmar"></input>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -142,15 +142,25 @@ height: 100%;
 
 .panel {
     border: 1px solid #000;
-    margin-top: 10%
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .col .izquierda img{
     width: 100%;
 }
 
+.panelIzquierdo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 12%;
+}
+
 .derecha {
-    text-align: center;  
+    text-align: center;
+
 }
 
 
