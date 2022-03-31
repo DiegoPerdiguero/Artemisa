@@ -29,8 +29,8 @@ WHERE pregunta_familia LIKE 'insectos';
 
 SELECT * 
 FROM Artemisa_Preguntas
-WHERE pregunta_nombreComun LIKE "%%";
+WHERE pregunta_nombreComun LIKE '%%';
 
 SELECT * 
 FROM Artemisa_Preguntas
-WHERE pregunta_nombreCientifico LIKE "%%";
+WHERE pregunta_nombreCientifico LIKE '%%';
