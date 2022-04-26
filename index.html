@@ -1,181 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    />
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+
     <title>Artemisa</title>
-  </head>
+</head>
 
 
-  <body>
+<body>
 
     <!----------------- Modal Login ----------------------->
-<div class="modal fade" id="Login" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">     
-      <div class="modal-content">
-        <form action="#" method="post" id="loginForm">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalLoginTitle">Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-        </div>       
-        <div class="modal-body">          
-            <div class="form-group">
-                <label for="username">Usuario: </label>
-                <input type="text" class="form-control" name="username" id="username" placeholder="Usuario" required>
+    <div class="modal fade" id="Login" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="#" method="post" id="loginForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLoginTitle">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="username">Usuario: </label>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Usuario" required>
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                            <label for="password">Contraseña: </label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                        <input type="submit" class="btn btn-danger" value="Entrar"></input>
+                </form>
+                </div>
             </div>
-            <br/>
-            <div class="form-group">
-                <label for="password">Contraseña: </label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+        </div>
+    </div>
+
+
+    <!----------------- Modal Registro ---------------------->
+    <div class="modal fade" id="Registro" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRegistroTitle">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="newUsername">Nombre: </label>
+                            <input type="text" name="newUsername" id="newUsername" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Contraseña: </label>
+                            <input type="newPassword" name="newPassword" id="newPassword" placeholder="Contraseña">
+                            <label for="doubleCheckPassword">Repetir contraseña: </label>
+                            <input type="doubleCheckPassword" name="doubleCheckPassword" id="doubleCheckPassword" placeholder="repetir contraseña">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <checkbox class="rememberMe" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Recordar datos</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
             </div>
         </div>
-        <div class="modal-footer">
-          <button type="" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
-          <input type="submit" class="btn btn-danger" value="Entrar"></input>
-        </form>
-        </div>
-      </div>
     </div>
-  </div>
 
-
-  <!----------------- Modal Registro ---------------------->
-<div class="modal fade" id="Registro" tabindex="-1" role="form" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalRegistroTitle">Registro</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-group">
-                    <label for="newUsername">Nombre: </label>
-                    <input type="text" name="newUsername" id="newUsername" placeholder="Nombre de usuario">
-                </div>
-                <div class="form-group">
-                    <label for="newPassword">Contraseña: </label>
-                    <input type="newPassword" name="newPassword" id="newPassword" placeholder="Contraseña">
-                    <label for="doubleCheckPassword">Repetir contraseña: </label>
-                    <input type="doubleCheckPassword" name="doubleCheckPassword" id="doubleCheckPassword" placeholder="repetir contraseña">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                </div>
-                <div class="form-group">
-                    <checkbox class="rememberMe" id="rememberMe">
-                    <label class="form-check-label" for="rememberMe">Recordar datos</label>
-                </div>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Guardar cambios</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-      <!------------------------------- Nav --------------------------->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!------------------------------- Nav --------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container cabecera">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#Login" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toogle="modal" data-target="#Registro" href="#">Regístrate</a>
-              </li>
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#Login" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toogle="modal" data-target="#Registro" href="#">Regístrate</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    
+    </nav>
+
     <!-------------------------------- Contenido ----------------------------------->
-      <section>
+    <section>
         <div class="container px-4 px-lg-5 cabecera">
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-6 cuerpo">
                     <h1 class="mt-0 mb-5 titular">ARTEMISA</h1>
-                    <p>Empieza un plan de entrenamiento, participa en retos y ve ganando fuerza. Corre, sal a pedalear, camina, entrena, baila... ¡toda actividad cuenta! No importa lo lejos que estés de alcanzar tus objetivos: descubre lo mejor de ti con
-                        las apps de Everyone Active</p>
-                        <div class="button-holder"><a class="button outline" href="#">Saber más<span class="lines"></span></a></div>
+                    <p class="text"><i>De visu es una locución latina que significa literalmente «con los propios ojos».</i> <br/><br/> Comienza tu plan de entrenamiento para estudiar y memorizar de la mejor manera la gran cantidad de fauna y flora que compone esta prueba
+                        práctica en las oposiciones a profesor en la especialidad de Biología y Geología<span class="dots">...</span>.<br/><br/> <span class="moreText">assumenda sapiente expedita labore atque! Sint velit cumque minus pariatur quisquam, beatae ab quo 
+                            impedit eaque soluta vel laboriosam itaque similique iste ex aut in nihil dolorem consequuntur possimus eligendi eos optio ipsam!<br/><br/> Sint ullam voluptate obcaecati asperiores eos vero sed iusto magnam ad, vel repellat quidem? Omnis fugit 
+                            accusantium, illo quos eos odio consectetur et nemo excepturi deleniti dolorum adipisci dolores delectus possimus libero, sed iusto dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </span></p>
+
+                    <div class="btn btn-one button-holder leer-mas-btn"><p>Leer más</p></div>
                 </div>
             </div>
         </div>
-      </section>
-    
+    </section>
+
     <div class="top-content">
-      <!--------------------------------- Carrusel ----------------------------------->
-    
-      <div id="carousel-example" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="4500">
-            <img 
-              src="imgs/slide-1.jpg"
-              class="d-block w-100"
-              alt="slide-img-1"
-            />
-          </div>
-          <div class="carousel-item" data-interval="4500">
-            <img
-              src="imgs/slide-2.jpg"
-              class="d-block w-100"
-              alt="slide-img-2"
-            />
-          </div>
-          <div class="carousel-item" data-interval="4500">
-            <img
-              src="imgs/slide-3.jpg"
-              class="d-block w-100"
-              alt="slide-img-4"
-            />
-          </div>
-          <div class="carousel-item" data-interval="4500">
-            <img
-              src="imgs/slide-7.jpg"
-              class="d-block w-100"
-              alt="slide-img-5"
-            />
-          </div>
-          <div class="carousel-item" data-interval="4500">
-            <img
-              src="imgs/slide-6.jpg"
-              class="d-block w-100"
-              alt="slide-img-6"
-            />
-          </div>
+        <!--------------------------------- Carrusel ----------------------------------->
+
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="4500">
+                    <img src="imgs/slide-1.jpg" class="d-block w-100" alt="slide-img-1" />
+                </div>
+                <div class="carousel-item" data-interval="4500">
+                    <img src="imgs/slide-2.jpg" class="d-block w-100" alt="slide-img-2" />
+                </div>
+                <div class="carousel-item" data-interval="4500">
+                    <img src="imgs/slide-3.jpg" class="d-block w-100" alt="slide-img-4" />
+                </div>
+                <div class="carousel-item" data-interval="4500">
+                    <img src="imgs/slide-7.jpg" class="d-block w-100" alt="slide-img-5" />
+                </div>
+                <div class="carousel-item" data-interval="4500">
+                    <img src="imgs/slide-6.jpg" class="d-block w-100" alt="slide-img-6" />
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!--------------------------- Footer ------------------------------>
     <footer class="text-center text-lg-start fixed-bottom">
         <div class="text-center p-3" style="padding-top: 0">
-          <p>© 2022 Diego Perdiguero Trillo - CIFP Santa Catalina</p>
+            <p>© 2022 Diego Perdiguero Trillo - CIFP Santa Catalina</p>
         </div>
-      </footer>
+    </footer>
     </div>
 
     <!-- Script para que el nav se encoja o despliegue en responsive-->
@@ -183,23 +155,12 @@
 
 
     <!--Scripts de bootstrap-->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!--Scripts custom-->
     <script src="./js/index.js"></script>
-  </body>
+</body>
+
 </html>
